@@ -15,7 +15,7 @@ async def _bot_protection(ctx):
 @bot.event
 async def on_ready():
     print(f'Bot is ready! Logged as in: {bot.user}')
-    await bot.change_presence(status=discord.Status.online, activity=discord.Activity(type=discord.ActivityType.listening, name=f"Youtube Music🎧"))
+    await bot.change_presence(status=discord.Status.online, activity=discord.Activity(type=discord.ActivityType.playing, name=f"Red Dead Online"))
 
 if __name__ == "__main__":
     for extension in bot.initials:
